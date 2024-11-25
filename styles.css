@@ -1,0 +1,148 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url("fondo.png") no-repeat center center fixed;
+    background-size: cover;
+    color: #333;
+}
+
+header {
+    background-color: rgba(42, 157, 143, 0.9); 
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo img {
+    width: 150px; 
+    height: auto;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ffe66d;
+}
+
+main {
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.95); 
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 1200px;
+}
+
+.articulos {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.articulos article {
+    background-color: #f1faee; 
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    width: 45%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.articulos article:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.articulos article h2 {
+    color: #1d3557; 
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.articulos article img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.articulos article ul {
+    background-color: #a8dadc; 
+    padding: 10px;
+    border-radius: 8px;
+    margin: 10px 0;
+    list-style-type: disc;
+    list-style-position: inside;
+}
+
+.articulos article p {
+    background-color: #e63946; 
+    color: #fff;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.cita {
+    background-color: #457b9d; 
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 400px;
+    margin: 0 auto;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.cita h2 {
+    color: #ffe66d; 
+    margin-bottom: 15px;
+}
+
+.cita form label {
+    display: block;
+    margin-top: 10px;
+}
+
+.cita form input, .cita form button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.cita form button {
+    background-color: #e63946; 
+    color: #fff;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cita form button:hover {
+    background-color: #a6062e;
+}
+
+footer {
+    background-color: rgba(42, 157, 143, 0.9); 
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 0.9rem;
+}
